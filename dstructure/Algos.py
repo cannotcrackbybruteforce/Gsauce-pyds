@@ -7,6 +7,7 @@ def seiveprimes(n):
     isprimearray=[False,False]+[True for i in range(n-1)]
     i=2
     while i*i <=n:
+      if isprimearray[i]:  
         j=2*i
         while j<=n:
             isprimearray[j]=False
